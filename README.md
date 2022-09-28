@@ -10,7 +10,7 @@ To print a 3D cube onto a 2D terminal, a 3D cube must first be built, then rotat
 ## buildCube
     
 Returns an array of the 8 vertices of a cube nested in the first octant with the specified length. The cube has space equal to 1 more than the max distance the cube could reach while rotating:
-![buildCube](https://user-images.githubusercontent.com/26773050/192668984-456cfadf-21f8-42aa-87a1-6b76b0ec5ac2.png)
+![buildCube](https://user-images.githubusercontent.com/26773050/192680347-df1fdb52-b95a-479b-bfd4-ac8c48254336.png)
 
 ## rotateCube
 
