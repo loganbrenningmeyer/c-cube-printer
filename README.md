@@ -86,7 +86,7 @@ Calculating intersections of the screen and the lines connecting vertices $(x, y
   - Need to find constant $t$ for the intersection of the line and the screen.
     - $xS = xC - length\*1.5$
     - $xS = x + ta$
-      - $screen$ x-coordinate must be somewhere along the line connecting the vertex and camera
+      - $screen$ $x$-coordinate must be somewhere along the line connecting the vertex and camera
     - $x + ta = xC - length\*1.5$
     - $t = (xC - length\*1.5 - x)/a$
   - Now, the points are solvable:
