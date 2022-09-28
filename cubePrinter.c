@@ -389,7 +389,8 @@ int ** getVerticesCoordinates(float ** cube, int length) {
     float t;
     //Y-value scaling constant:
     //██ Because the representation of pixels is slightly taller than it is
-    //wide, use yScale to shrink the output vertically to even proportions. 0.8 works best
+    //wide, use yScale to shrink the output vertically to even proportions.
+    //0.8 works best
     float yScale = 0.8;
 
     //For each vertex...

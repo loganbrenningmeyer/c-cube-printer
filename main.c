@@ -22,10 +22,13 @@ int main(void) {
         if (userChoice == 1) {
             animateCube();
         } else {
+            printf("\n");
             //Get user-inputted info for printCube()
-            int length, xTheta, yTheta, zTheta;
-            printf("\nCube Length (1-10): ");
-            scanf("%d", &length);
+            int length = 0, xTheta, yTheta, zTheta;
+            while (length < 1 || length > 10) {
+                printf("Cube Length (1-10): ");
+                scanf("%d", &length);
+            }
             printf("X-Orientation (degrees): ");
             scanf("%d", &xTheta);
             printf("Y-Orientation (degrees): ");
