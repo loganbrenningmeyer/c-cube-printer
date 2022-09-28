@@ -72,7 +72,7 @@ This point, $(x', y')$, represents the coordinates of the axes not being rotated
 
 With the now obtained 3D coordinates of the vertices of the cube, getVerticesCoordinates projects them onto a 2D plane and returns an int array of the 2D vertices' coordinates.
 
-To project the vertices onto a plane, a "camera" is placed at the point whose $y$ and $z$-values are centered with the cube and whose $x$-value is located $1.5\*length$ units past where the space surrounding the cube ends. In addition, a plane perpendicular to the $x$-axis, $screen$, is placed between the cube and the camera at the $x$-value of the outer edge of the cube's space $(xS = xC - 1.5\*length)$. For each vertex, the equation of the line between the vertex and the camera is calculated. The 2D projection of the vertex is then found by finding the point of intersection of the line and $screen$.
+To project the vertices onto a plane, a "camera" is placed at the point whose $y$ and $z$-values are centered with the cube and whose $x$-value is located $1.5\*length$ units past where the space surrounding the cube ends. In addition, a plane perpendicular to the $x$-axis, $screen(xS, yS)$, is placed between the cube and the camera at the $x$-value of the outer edge of the cube's space $(xS = xC - 1.5\*length)$. For each vertex, the equation of the line between the vertex and the camera is calculated. The 2D projection of the vertex is then found by finding the point of intersection of the line and $screen$.
 
 2D projection of a cube with no rotation:
 
@@ -83,19 +83,19 @@ Calculating intersections of the screen and the lines connecting vertices $(x, y
     - $a = xC - x$
     - $b = yC - y$
     - $c = zC - z$
-    - $screen(xS, yS)$ is the plane located at the edge of the space surrounding the cube ($x = xC - length\*1.5$). Need to find constant $t$ for the intersection of the line and the screen.
-     - $xS = xC - length\*1.5$
-     - $xS = x + ta$
-       - $screen$ x-coordinate must be somewhere along the line connecting the vertex and camera
-     - $x + ta = xC - length\*1.5$
-     - $t = (xC - length\*1.5 - x)/a$
-   - Now, the points are solvable:
-     - $screen(xS, yS) = (y + tb, z + tc)$
-       - When looking at cube in negative $x$ direction, $y$ represents $x$-axis and $z$ represents $y$-axis
-       - Multiply $y$-value by 31/35 to get rid of the warping effect from non-square pixels (██) 
-         - Pixels are about 35px tall and 31px wide, therefore need to multiply y-values by 31/35 to give things square proportions
-   - Multiply all coordinate values by 10 then round to the nearest integer
-      - Prepares coordinates for Bresenham's algorithm by converting to int and minimizes loss of data
+  - Need to find constant $t$ for the intersection of the line and the screen.
+    - $xS = xC - length\*1.5$
+    - $xS = x + ta$
+      - $screen$ x-coordinate must be somewhere along the line connecting the vertex and camera
+    - $x + ta = xC - length\*1.5$
+    - $t = (xC - length\*1.5 - x)/a$
+  - Now, the points are solvable:
+    - $screen(xS, yS) = (y + tb, z + tc)$
+      - When looking at cube in negative $x$ direction, $y$ represents $x$-axis and $z$ represents $y$-axis
+      - Multiply $y$-value by 31/35 to get rid of the warping effect from non-square pixels (██) 
+        - Pixels are about 35px tall and 31px wide, therefore need to multiply y-values by 31/35 to give things square proportions
+  - Multiply all coordinate values by 10 then round to the nearest integer
+     - Prepares coordinates for Bresenham's algorithm by converting to int and minimizes loss of data
 
 ## getLineCoordinates
 
