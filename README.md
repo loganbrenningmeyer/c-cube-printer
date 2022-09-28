@@ -27,8 +27,7 @@ When rotating from a single axis (x, y, or z), the change in coordinates is esse
 The figures below represent a 45 degree rotation of the green vertex around the x-axis:  
 <img src = "https://user-images.githubusercontent.com/26773050/192688704-69374cc3-1ae7-45a5-a623-ec885241ec7e.png" width = 80%>  
 Represented in 2D polar coordinates:  
-<img src = "https://user-images.githubusercontent.com/26773050/192688715-295ad6ca-2ff4-4ad4-a88f-a7ac845e9680.png" width = 80%>  
-Represented in 2D polar coordinates:  
+<img src = "https://user-images.githubusercontent.com/26773050/192688715-295ad6ca-2ff4-4ad4-a88f-a7ac845e9680.png" width = 80%>   
 
 Calculating adjacent and opposite:
   - $adjacent = x - origin$
@@ -44,6 +43,17 @@ Solving for $\alpha$, the vertex's original angle of rotation:
   - $\alpha = \arctan(y/x)$
     - If the point lies in Quadrant I relative to the origin, leave $\alpha$ as is
     - If the point is in Quadrant II or III, add $\pi$
-    - If the point is in Quadrant IV, add $2\pi$ 
+    - If the point is in Quadrant IV, add $2\pi$
+
+Finally, finding (x', y'):
+  - Add angle shift $\theta$ to $\alpha$ and correct by the origin
+    - $x' = r\cos(\alpha + \theta) + origin$
+    - $y' = r\sin(\alpha + \theta) + origin$
+
+This point, (x', y'), represents the coordinates of the axes not being rotated. Because rotation is parallel to its axis, the coordinate for the axis of rotation does not change. Therefore, in the instance of the green vertex being rotated 45 degrees around the x-axis, it's new coordinates are (x, x', y')
+  - Relative x & y in 2D depending on axis of rotation:
+    - X-Rotation: x-values = y, y-values = z
+    - Y-Rotation: x-values = z, y-values = x
+    - Z-Rotation: x-values = x, y-values = y
 
 # Printing
