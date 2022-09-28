@@ -107,9 +107,9 @@ Bresenham's line algorithm in action:
 
 Recall earlier when I said the ordering of the vertices would be important later? Now is that time. To draw each of the 12 edges of the cube, you must create a line between each of the four vertices on top of the cube, between each of the four vertices on the bottom, and for each of the four columns connecting the top and bottom. By referring to the order of the vertices in the screen array when the cube was initially built, lines can always be drawn between the proper vertices regardless of orientation. 
 
-Using Bresenham's algorithm, getLineCoordinates finds every coordinate of all 12 lines and adds it to coordsArray. This creates an unordered array of all of the cube's points. Vertices are included multiple times because they are connected to multiple lines. This is taken care of later, however, when printing to the terminal.
+Using Bresenham's algorithm, getLineCoordinates finds every coordinate of all 12 lines and adds it to **coordsArray**. This creates an unordered array of all of the cube's points. Vertices are included multiple times because they are connected to multiple lines. This is taken care of later, however, when printing to the terminal.
 
-To prepare the coordinates for printing, coordsArray is quicksorted so that coordinates are sorted descending by y-value. In addition, coordinates with matching $y$-values are sorted ascending by $x$-value. This way, when the array is read from beginning to end it gives coordinates from top to bottom, left to right.
+To prepare the coordinates for printing, **coordsArray** is quicksorted so that coordinates are sorted descending by $y$-value. In addition, coordinates with matching $y$-values are sorted ascending by $x$-value. This way, when the array is read from beginning to end it gives coordinates from top to bottom, left to right.
 
 ## printToTerminal
 
