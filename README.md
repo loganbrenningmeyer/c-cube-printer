@@ -40,9 +40,9 @@ Calculating radius:
 
 Solving for $\alpha$, the vertex's original angle of rotation:  
   - $\tan(\alpha) = y/x$
-  - $\alpha$ = \arctan(y/x)$
-  - If the point lies in Quadrant I relative to the origin, leave $\alpha$ as is
-  - If the point is in Quadrant II or III, add $\pi$
-  - If the point is in Quadrant IV, add $2*\pi$ 
+  - $\alpha = \arctan(y/x)$
+    - If the point lies in Quadrant I relative to the origin, leave $\alpha$ as is
+    - If the point is in Quadrant II or III, add $\pi$
+    - If the point is in Quadrant IV, add $2*\pi$ 
 
 # Printing
