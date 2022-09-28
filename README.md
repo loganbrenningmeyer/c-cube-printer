@@ -83,4 +83,7 @@ Calculating intersections of the lines between vertices (x, y, z) and the camera
     - Therefore:
      - $screen(xS, yS) = (y + tb, z + tc)$
        - When looking at cube in negative x direction, y represents x-axis and z represents y-axis
+
+<img src = "https://user-images.githubusercontent.com/26773050/192704553-cb0a48a8-2764-47ae-8c77-d0e21ade62b5.png" width = 80%>
+
   
