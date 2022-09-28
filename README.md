@@ -96,7 +96,7 @@ Bresenham line algorithm in action:
 
 ![Bresenham Line Algorithm](https://www.middle-engine.com/images/2020-07-28-bresenhams-line-algorithm/03_bresenham-12x12-example.gif)
 
-Recall earlier when I said the ordering of the vertices would be important later, now is that time. To draw each of the 12 edges of the cube, you must create a line between each of the four vertices on top of the cube, between each of the four vertices on the bottom, and for each of the four columns connecting the top and bottom. By referring to the order of the vertices in the screen array when the cube was initially built, lines can always be drawn between the proper vertices regardless of orientation. 
+Recall earlier when I said the ordering of the vertices would be important later? Now is that time. To draw each of the 12 edges of the cube, you must create a line between each of the four vertices on top of the cube, between each of the four vertices on the bottom, and for each of the four columns connecting the top and bottom. By referring to the order of the vertices in the screen array when the cube was initially built, lines can always be drawn between the proper vertices regardless of orientation. 
 
 Using Bresenham's algorithm, getLineCoordinates finds every coordinate of all 12 lines and adds it to coordsArray. This creates an unordered array of all of the cube's points. Vertices are included multiple times because they are connected to multiple lines. This is taken care of later, however, when printing to the terminal.
 
