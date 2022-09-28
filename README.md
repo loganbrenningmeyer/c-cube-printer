@@ -103,7 +103,7 @@ Now that we have the vertices, the next step is to connect them with lines. To d
 
 Bresenham's line algorithm in action:
 
-![Bresenham Line Algorithm](https://www.middle-engine.com/images/2020-07-28-bresenhams-line-algorithm/03_bresenham-12x12-example.gif)
+<a href = "https://www.middle-engine.com/blog/posts/2020/07/28/bresenhams-line-algorithm">![Bresenham Line Algorithm](https://www.middle-engine.com/images/2020-07-28-bresenhams-line-algorithm/03_bresenham-12x12-example.gif)</a>
 
 Recall earlier when I said the ordering of the vertices would be important later? Now is that time. To draw each of the 12 edges of the cube, you must create a line between each of the four vertices on top of the cube, between each of the four vertices on the bottom, and for each of the four columns connecting the top and bottom. By referring to the order of the vertices in the screen array when the cube was initially built, lines can always be drawn between the proper vertices regardless of orientation. 
 
