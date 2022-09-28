@@ -93,7 +93,7 @@ Calculating intersections of the screen and the lines connecting vertices $(x, y
     - $screen(xS, yS) = (y + tb, z + tc)$
       - When looking at cube in negative $x$ direction, $y$ represents $x$-axis and $z$ represents $y$-axis
       - Multiply $y$-value by 31/35 to get rid of the warping effect from non-square pixels (██) 
-        - Pixels are about 35px tall and 31px wide, therefore need to multiply y-values by 31/35 to give things square proportions
+        - Pixels are about 35px tall and 31px wide, therefore need to multiply $y$-values by 31/35 to give things square proportions
   - Multiply all coordinate values by 10 then round to the nearest integer
      - Prepares coordinates for Bresenham's algorithm by converting to int and minimizes loss of data
 
