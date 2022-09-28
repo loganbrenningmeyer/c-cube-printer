@@ -61,6 +61,6 @@ This point, $(x', y')$, represents the coordinates of the axes not being rotated
     - Y-Rotation: x-axis = z, y-axis = x
       - **$(x', y', z') = (y', y, x')$**
     - Z-Rotation: x-axis = x, y-axis = y
-      - **$(x', y', z') = (x', y', z)$**
+      - $(x', y', z') = (x', y', z)$
 
 # Printing
