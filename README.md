@@ -85,7 +85,7 @@ Calculating intersections of the lines between vertices (x, y, z) and the camera
        - Screen x-coordinate must be somewhere along the line connecting the vertex and camera
      - $x + ta = xC - length\*1.5$
      - $t = (xC - length\*1.5 - x)/a$
-   - Therefore:
+   - Now, the points are solvable:
      - $screen(xS, yS) = (y + tb, z + tc)$
        - When looking at cube in negative x direction, y represents x-axis and z represents y-axis
        - Multiply y-value by 0.8 to get rid of the warping effect from non-square pixels (██) 
