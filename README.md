@@ -84,12 +84,9 @@ Calculating intersections of the lines between vertices (x, y, z) and the camera
      - $screen(xS, yS) = (y + tb, z + tc)$
        - When looking at cube in negative x direction, y represents x-axis and z represents y-axis
 
-Projecting a cube with no rotation:
+2D projection of a cube with no rotation:
 
 <img src = "https://user-images.githubusercontent.com/26773050/192704553-cb0a48a8-2764-47ae-8c77-d0e21ade62b5.png" width = 60%><img src = "https://user-images.githubusercontent.com/26773050/192706152-092c3b61-4410-4302-addb-999f93499ad7.png" width = 40%>
-
-
-2D projection of vertices:
 
 
 
