@@ -27,6 +27,10 @@ When rotating from a single axis (x, y, or z), the change in coordinates is esse
 The figures below represent a 45 degree rotation of the green vertex around the x-axis:  
 ![rotateCube3D](https://user-images.githubusercontent.com/26773050/192679102-193a403f-9daf-4363-acef-4c34911595a9.png)  
 Represented in 2D polar coordinates:  
-![rotateCube2D](https://user-images.githubusercontent.com/26773050/192679117-bd7363a4-c6ef-43be-a26f-09806fc2e58b.png)
+![rotateCube2D](https://user-images.githubusercontent.com/26773050/192681940-c853ed3a-5fa7-4eab-95ea-5ef7109011dc.png)  
+
+To calculate *adjacent* just take *(x - origin)*, and to calculate *opposite* take *(y - origin)*
+  - *adjacent* written in code as **alphaX** and *opposite* written as **alphaY**
+Using the Pythagorean theorem, *radius* = $\sqrt{adjacent^2 + opposite^2}$
 
 # Printing
