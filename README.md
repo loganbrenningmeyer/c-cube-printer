@@ -54,7 +54,7 @@ Finally, finding $(x', y')$:
     - $x' = r\cos(\alpha + \theta) + origin$
     - $y' = r\sin(\alpha + \theta) + origin$
 
-This point, (x', y'), represents the coordinates of the axes not being rotated. Because rotation is parallel to its axis, the coordinate for the axis of rotation does not change. Therefore, in the instance of the green vertex being rotated 45 degrees around the x-axis, it's new coordinates are (x, x', y')
+This point, $(x', y')$, represents the coordinates of the axes not being rotated. Because rotation is parallel to its axis, the coordinate for the axis of rotation does not change. Therefore, in the instance of the green vertex being rotated 45 degrees around the x-axis, it's new coordinates are $(x, x', y')$
   - Relative x & y in 2D depending on axis of rotation:
     - X-Rotation: x-values = y, y-values = z
     - Y-Rotation: x-values = z, y-values = x
