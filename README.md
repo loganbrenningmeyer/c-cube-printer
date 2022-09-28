@@ -111,6 +111,8 @@ Using Bresenham's algorithm, getLineCoordinates finds every coordinate of all 12
 
 To prepare the coordinates for printing, **coordsArray** is quicksorted so that coordinates are sorted descending by $y$-value. In addition, coordinates with matching $y$-values are sorted ascending by $x$-value. This way, when the array is read from beginning to end it gives coordinates from top to bottom, left to right.
 
+`daslfj;asdlf`
+
 ## printToTerminal
 
 Lastly, printing the coordinates to the terminal. Because the array is already sorted, printing isn't too difficult. There are only a few rules:
