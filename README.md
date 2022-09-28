@@ -85,11 +85,11 @@ Calculating intersections of the lines between vertices (x, y, z) and the camera
        - Screen x-coordinate must be somewhere along the line connecting the vertex and camera
      - $x + ta = xC - length\*1.5$
      - $t = (xC - length\*1.5 - x)/a$
-    - Therefore:
+   - Therefore:
      - $screen(xS, yS) = (y + tb, z + tc)$
        - When looking at cube in negative x direction, y represents x-axis and z represents y-axis
        - Multiply y-value by 0.8 to get rid of the warping effect from non-square pixels (██) 
-    - Multiply all coordinate values by 10 then round to the nearest integer
+   - Multiply all coordinate values by 10 then round to the nearest integer
       - Prepares coordinates for Bresenham's algorithm by converting to int and minimizes loss of data
 
 2D projection of a cube with no rotation:
