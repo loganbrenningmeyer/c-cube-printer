@@ -2,9 +2,9 @@
 
 ![Spinning Cube](https://media.giphy.com/media/fJ0fxIbhiA8cfdUcJS/giphy.gif)
 
-Animates random cube rotation in the terminal or prints cube with user-specified size/orientation
-
 **NOTE: Only works in Linux so it can use the proper escape sequences and characters for printing. Also, will need to zoom out the terminal when running so that the cube has enough space to rotate. Zoom out more for larger cubes.**
+
+Animates random cube rotation in the terminal or prints cube with user-specified size/orientation
 
 To print a 3D cube onto a 2D terminal, a 3D cube must first be constructed, then rotated, then projected onto a 2D plane. To do this:
   1. Build the cube as 8 vertices in 3D space
