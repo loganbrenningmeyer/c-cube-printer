@@ -46,8 +46,8 @@ Calculating radius:
     - $radius = \sqrt{adjacent^2 + opposite^2}$
 
 Solving for $\alpha$, the vertex's original angle of rotation:  
-  - $\tan(\alpha) = y/x$
-  - $\alpha = \arctan(y/x)$
+  - $\tan(\alpha) = opposite/adjacent$
+  - $\alpha = \arctan(opposite/adjacent)$
     - If the point lies in Quadrant I relative to the origin, leave $\alpha$ as is
     - If the point is in Quadrant II or III, add $\pi$
     - If the point is in Quadrant IV, add $2\pi$
