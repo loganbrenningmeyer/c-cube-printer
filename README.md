@@ -70,7 +70,7 @@ This point, $(x', y')$, represents the coordinates of the axes not being rotated
 
 ## getVerticesCoordinates
 
-With the now solved 3D coordinates of the vertices of the cube, getVerticesCoordinates projects them onto a 2D plane and returns an int array of the 2D vertices' coordinates.
+With the now obtained 3D coordinates of the vertices of the cube, getVerticesCoordinates projects them onto a 2D plane and returns an int array of the 2D vertices' coordinates.
 
 To project the vertices onto a plane, a "camera" is placed at a point whose y and z-values are centered with the cube and whose x-value is located 1.5\*length units past where the space surrounding the cube ends. 
 
