@@ -72,7 +72,7 @@ This point, $(x', y')$, represents the coordinates of the axes not being rotated
 
 With the now solved 3D coordinates of the vertices of the cube, getVerticesCoordinates projects them onto a 2D plane and returns an int array of the 2D vertices' coordinates.
 
-To project the vertices onto a plane, a "camera" is placed at a point whose y and z-values are centered with the cube and whose x-value is located 1.5\*side length units past where the space surrounding the cube ends. 
+To project the vertices onto a plane, a "camera" is placed at a point whose y and z-values are centered with the cube and whose x-value is located 1.5\*length units past where the space surrounding the cube ends. 
 
 Calculating intersections of the lines between vertices (x, y, z) and the camera (xC, yC, zC) and the screen:
   - Line equation: $(xC, yC, zC) = (x, y, z) + t<a, b, c>$
@@ -117,7 +117,7 @@ Lastly, printing the coordinates to the terminal. Because the array is already s
     - If the point is the last on its row, print a new line
     - Otherwise, print $x-xPrev-1$ spaces before it
       - Print amount of space between current point and previous point
-  - To keep the cube from bobbing up and down and sticking to the top of the terminal, print $(2 \* space + cubeLength)\*10 - maxY)$ new lines
+  - To keep the cube from bobbing up and down and sticking to the top of the terminal, print $(2 \* space + length)\*10 - maxY)$ new lines
     - Adds space above the cube equal to the distance between the maximum y-value of the cube and the edge of the space taken up by the cube
     - Just as printing $x-1$ spaces to the left of new rows prints x-values properly relative to their true coordinates, printing these new lines situates the y-values so the cube doesn't stray from its center
 
