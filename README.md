@@ -19,7 +19,9 @@ Given the 8 vertices found by buildCube, rotateCube rotates each vertex around t
 When rotating from a single axis (x, y, or z), the change in coordinates is essentially the same as a rotation with 2D polar coordinates, treating the two axes that are not being rotated as x and y in 2D.
   - Recall in polar coordinates **x = rcos(θ)** and **y = rsin(θ)**
 
+The figures below represent a 45 degree rotation of the green vertex around the x-axis:
 ![rotateCube3D](https://user-images.githubusercontent.com/26773050/192679102-193a403f-9daf-4363-acef-4c34911595a9.png)
+Represented as in 2D polar coordinates:
 ![rotateCube2D](https://user-images.githubusercontent.com/26773050/192679117-bd7363a4-c6ef-43be-a26f-09806fc2e58b.png)
 
 # Printing
