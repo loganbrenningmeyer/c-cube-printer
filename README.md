@@ -100,7 +100,7 @@ Calculating intersections of the lines between vertices (x, y, z) and the camera
 
 Now that we have the vertices, the next step is to connect them with lines. To do so, <a href = "https://www.geeksforgeeks.org/bresenhams-line-generation-algorithm/">Bresenham's Line Generation Algorithm</a> can calculate each coordinate between two points in a line using only int arithmetic. In short, the algorithm tracks the slope error between the the generated line and the true line, incrementing as needed to stay aligned. 
 
-Bresenham line algorithm in action:
+Bresenham's line algorithm in action:
 
 ![Bresenham Line Algorithm](https://www.middle-engine.com/images/2020-07-28-bresenhams-line-algorithm/03_bresenham-12x12-example.gif)
 
