@@ -44,6 +44,7 @@ Calculating adjacent and opposite:
 Calculating radius:
   - Using the Pythagorean theorem:
     - $radius = \sqrt{adjacent^2 + opposite^2}$
+  - $radius$ must be calculated for each vertex as different vertices may be different distances from the axis of rotation if a rotation for another axis has already been applied.
 
 Solving for $\alpha$, the vertex's original angle of rotation:  
   - $\tan(\alpha) = opposite/adjacent$
