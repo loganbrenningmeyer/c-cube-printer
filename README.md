@@ -25,7 +25,7 @@ When rotating from a single axis (x, y, or z), the change in coordinates is esse
   - Recall in polar coordinates $x = r\cos(\theta)$ and $y = r\sin(\theta)$
 
 The figures below represent a 45 degree rotation of the green vertex around the x-axis:  
-![rotateCube3D](https://user-images.githubusercontent.com/26773050/192679102-193a403f-9daf-4363-acef-4c34911595a9.png)  
+![rotateCube3D](https://user-images.githubusercontent.com/26773050/192688442-e96a949f-91aa-4ab4-b4bb-8aa4fecedd8b.png)  
 Represented in 2D polar coordinates:  
 ![rotateCube2D](https://user-images.githubusercontent.com/26773050/192685974-0708a092-5956-4700-8436-358ff8c5b32e.png)
 
