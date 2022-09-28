@@ -32,7 +32,7 @@ Represented in 2D polar coordinates:
 Calculating adjacent and opposite:
   - $adjacent = x - origin$
   - $opposite = y - origin$
-  - $adjacent$ written in code as **alphaX** and $opposite$ written as **alphaY**
+  - adjacent written in code as **alphaX** and opposite written as **alphaY**
 
 Calculating radius:
   - Using the Pythagorean theorem:
