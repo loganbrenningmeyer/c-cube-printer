@@ -1,7 +1,7 @@
 # c-cube-printer  
 
 Animates random cube rotation in the terminal or prints cube with user-specified size/orientation  
-  - Compiled with infiniteCube.c: Animates infinitely rotating cube until the user terminates the program (CTRL+C)
+  - If compiled with infiniteCube.c: Animates infinitely rotating cube until the user terminates the program (CTRL+C)
 
 ![Spinning Cube](https://media.giphy.com/media/fJ0fxIbhiA8cfdUcJS/giphy.gif)
 
