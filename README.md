@@ -114,7 +114,7 @@ To prepare the coordinates for printing, coordsArray is quicksorted so that coor
 
 Lastly, printing the coordinates to the terminal. Because the array is already sorted, printing isn't too difficult. There are only a few rules:
   - For $(x,y)$:
-    - If the point is a repeat of the previous point (vertices), continue to the next point
+    - If the point is a repeat of the previous point in the array (vertices), continue to the next point
     - If the point is the first on its row, print $x-1$ spaces before it
     - If the point is the last on its row, print a new line
     - Otherwise, print $x-xPrev-1$ spaces before it
