@@ -86,8 +86,7 @@ Calculating intersections of the lines between vertices (x, y, z) and the camera
 
 Projecting a cube with no rotation:
 
-<img src = "https://user-images.githubusercontent.com/26773050/192704553-cb0a48a8-2764-47ae-8c77-d0e21ade62b5.png" width = 50%>
-<img src = "https://user-images.githubusercontent.com/26773050/192706152-092c3b61-4410-4302-addb-999f93499ad7.png" width = 50%>
+<img src = "https://user-images.githubusercontent.com/26773050/192704553-cb0a48a8-2764-47ae-8c77-d0e21ade62b5.png" width = 50%><img src = "https://user-images.githubusercontent.com/26773050/192706152-092c3b61-4410-4302-addb-999f93499ad7.png" width = 50%>
 
 
 2D projection of vertices:
