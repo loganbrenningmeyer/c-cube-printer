@@ -23,7 +23,7 @@ Returns an array of the 8 vertices of a cube nested in the first octant with the
 
 ## rotateCube  
 
-Given the 8 vertices found by buildCube, rotateCube rotates each vertex around the cube's center $x$-axis, $y$-axis, and $z$-axis by $xTheta$, $yTheta$, and $zTheta$ degrees, respectively.  
+Given the 8 vertices found by buildCube, rotateCube rotates each vertex around the cube's center $x$-axis, $y$-axis, and $z$-axis by $xTheta,$ $yTheta,$ and $zTheta$ degrees, respectively.  
 
 When rotating from a single axis $x$, $y$, or $z$, the change in coordinates is essentially the same as a rotation with 2D polar coordinates, treating the two axes that are not being rotated as $x$ and $y$ in 2D.  
   - Recall in polar coordinates $x = r\cos(\theta)$ and $y = r\sin(\theta)$
