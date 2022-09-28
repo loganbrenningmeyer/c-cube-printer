@@ -18,9 +18,27 @@ int main(void) {
             scanf("%d", &userChoice);
         }
 
-        //Animate or Print Cube
+        //Animate cube
         if (userChoice == 1) {
-            animateCube();
+            int fps, seconds, length;
+
+            //Take animation duration as input
+            printf("\nDuration (s): ");
+            scanf("%d", &seconds);
+
+            //Take fps as input
+            printf("FPS: ");
+            scanf("%d", &fps);
+
+            //Take length as input
+            while (length > 10 || length < 1) {
+                printf("Cube Length (1-10): ");
+                scanf("%d", &length);
+            }
+
+            animateCube(length, seconds, fps);
+            
+        //Print cube
         } else {
             printf("\n");
             //Get user-inputted info for printCube()

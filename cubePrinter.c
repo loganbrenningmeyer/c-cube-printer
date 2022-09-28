@@ -7,25 +7,13 @@
 
 //Animates cube based on given starting orientation, 
 //ending orientation, cube length, duration, and fps
-void animateCube() {
+void animateCube(int length, int seconds, int fps) {
 
     srand(time(NULL));
 
-    int fps, seconds, frames;
-
-    //Take animation duration as input
-    printf("\nDuration (s): ");
-    scanf("%d", &seconds);
-
-    //Take fps as input
-    printf("FPS: ");
-    scanf("%d", &fps);
-
     //Calculate # of frames
-    frames = seconds * fps;
+    int frames = seconds * fps;
 
-    //Variables for cube length & starting/ending angles
-    int length = 0;
     //Variables for starting/ending orientation
     float xTheta, yTheta, zTheta, xFinal, yFinal, zFinal;
 
@@ -33,17 +21,12 @@ void animateCube() {
     xTheta = rand() % 721 - 360, yTheta = rand() % 721 - 360, zTheta = rand() % 721 - 360;
     xFinal = rand() % 721 - 360, yFinal = rand() % 721 - 360, zFinal = rand() % 721 - 360;
 
-    while (length > 10 || length < 1) {
-        printf("Cube Length (1-10): ");
-        scanf("%d", &length);
-    }
-
     //Calculate amount to increment for each axis per frame
     float xInc = (float)(xFinal - xTheta)/frames, 
           yInc = (float)(yFinal - yTheta)/frames, 
           zInc = (float)(zFinal - zTheta)/frames;
 
-
+    //Loops for each frame in the animation
     for (int i = 0; i < frames; i++) {
         //Per frame, print the cube then adjust orientation
         printCube(length, xTheta, yTheta, zTheta);
