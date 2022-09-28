@@ -1,4 +1,7 @@
-# c-cube-printer
+# c-cube-printer  
+
+![Spinning Cube](https://media.giphy.com/media/fJ0fxIbhiA8cfdUcJS/giphy.gif)
+
 Animates random cube rotation in the terminal or prints cube with user-specified size/orientation
 
 **NOTE: Only works in Linux so it can use the proper escape sequences and characters for printing. Also, will need to zoom out the terminal when running so that the cube has enough space to rotate. Zoom out more for larger cubes.**
