@@ -72,7 +72,7 @@ This point, $(x', y')$, represents the coordinates of the axes not being rotated
 
 With the now obtained 3D coordinates of the vertices of the cube, getVerticesCoordinates projects them onto a 2D plane and returns an int array of the 2D vertices' coordinates.
 
-To project the vertices onto a plane, a "camera" is placed at the point whose $y$ and $z$-values are centered with the cube and whose $x$-value is located $1.5\*length$ units past where the space surrounding the cube ends. In addition, a plane perpendicular to the $x$-axis, $screen$, is placed between the cube and the camera at the $x$-value on the outer edge of the cube's space. For each vertex, the equation of the line between the vertex and the camera is calculated. The 2D projection of the vertex is then found by finding the point of intersection of the line and $screen$.
+To project the vertices onto a plane, a "camera" is placed at the point whose $y$ and $z$-values are centered with the cube and whose $x$-value is located $1.5\*length$ units past where the space surrounding the cube ends. In addition, a plane perpendicular to the $x$-axis, $screen$, is placed between the cube and the camera at the $x$-value of the outer edge of the cube's space. For each vertex, the equation of the line between the vertex and the camera is calculated. The 2D projection of the vertex is then found by finding the point of intersection of the line and $screen$.
 
 2D projection of a cube with no rotation:
 
