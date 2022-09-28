@@ -29,10 +29,14 @@ The figures below represent a 45 degree rotation of the green vertex around the 
 Represented in 2D polar coordinates:  
 ![rotateCube2D](https://user-images.githubusercontent.com/26773050/192684232-6ab194b8-2c26-4dcf-be7c-2bb38b7ba5f6.png)  
 
-To calculate *adjacent* just take (x - origin), and to calculate *opposite* take (y - origin)
-  - *adjacent* written in code as **alphaX** and *opposite* written as **alphaY**
+Calculating $adjacent$ and $opposite$:
+  - $adjacent = x - origin$
+  - $opposite = y - origin$
+  - $adjacent$ written in code as **alphaX** and $opposite$ written as **alphaY**
 
-Using the Pythagorean theorem, *radius* = $\sqrt{adjacent^2 + opposite^2}$
+Calculating $radius$:
+  - Using the Pythagorean theorem:
+    - $radius = \sqrt{adjacent^2 + opposite^2}$
 
 Solving for $\alpha$, the vertex's original angle of rotation:  
   - $\tan(\alpha) = y/x$
