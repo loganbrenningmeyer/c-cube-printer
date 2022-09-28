@@ -78,7 +78,7 @@ To project the vertices onto a plane, a "camera" is placed at the point whose $y
 | ------------------------- | ------------- |
 | ![](https://user-images.githubusercontent.com/26773050/192704553-cb0a48a8-2764-47ae-8c77-d0e21ade62b5.png) | ![](https://user-images.githubusercontent.com/26773050/192706152-092c3b61-4410-4302-addb-999f93499ad7.png) |
 
-Calculating intersections of the screen and the lines connecting vertices $(x, y, z)$ and the camera $(xC, yC, zC)$:
+Calculating intersections of $screen$ and the lines connecting vertices $(x, y, z)$ and the camera $(xC, yC, zC)$:
   - Line equation: $(xC, yC, zC) = (x, y, z) + t&lta, b, c&gt$
     - $a = xC - x$
     - $b = yC - y$
