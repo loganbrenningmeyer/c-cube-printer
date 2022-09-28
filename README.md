@@ -22,25 +22,25 @@ Returns an array of the 8 vertices of a cube nested in the first octant with the
 Given the 8 vertices found by buildCube, rotateCube rotates each vertex around the cube's center x-axis, y-axis, and z-axis by xTheta, yTheta, and zTheta degrees, respectively.  
 
 When rotating from a single axis (x, y, or z), the change in coordinates is essentially the same as a rotation with 2D polar coordinates, treating the two axes that are not being rotated as x and y in 2D.  
-  - Recall in polar coordinates **$x = r\cos(\theta)** and **y = r\sin(\theta)$**  
+  - Recall in polar coordinates $x = r\cos(\theta)$ and $y = r\sin(\theta)$
 
 The figures below represent a 45 degree rotation of the green vertex around the x-axis:  
 ![rotateCube3D](https://user-images.githubusercontent.com/26773050/192679102-193a403f-9daf-4363-acef-4c34911595a9.png)  
 Represented in 2D polar coordinates:  
 ![rotateCube2D](https://user-images.githubusercontent.com/26773050/192684232-6ab194b8-2c26-4dcf-be7c-2bb38b7ba5f6.png)  
 
-Calculating $adjacent$ and $opposite$:
+Calculating adjacent and opposite:
   - $adjacent = x - origin$
   - $opposite = y - origin$
   - $adjacent$ written in code as **alphaX** and $opposite$ written as **alphaY**
 
-Calculating $radius$:
+Calculating radius:
   - Using the Pythagorean theorem:
     - $radius = \sqrt{adjacent^2 + opposite^2}$
 
 Solving for $\alpha$, the vertex's original angle of rotation:  
   - $\tan(\alpha) = y/x$
-  - $\alpha$ = \atan(y/x)$
+  - $\alpha$ = \arctan(y/x)$
   - If the point lies in Quadrant I relative to the origin, leave $\alpha$ as is
   - If the point is in Quadrant II or III, add $\pi$
   - If the point is in Quadrant IV, add $2*\pi$ 
