@@ -23,12 +23,12 @@ Returns an array of the 8 vertices of a cube nested in the first octant with the
 
 ## rotateCube  
 
-Given the 8 vertices found by buildCube, rotateCube rotates each vertex around the cube's center x-axis, y-axis, and z-axis by $xTheta$, $yTheta$, and $zTheta$ degrees, respectively.  
+Given the 8 vertices found by buildCube, rotateCube rotates each vertex around the cube's center $x$-axis, $y$-axis, and $z$-axis by $xTheta$, $yTheta$, and $zTheta$ degrees, respectively.  
 
 When rotating from a single axis $x$, $y$, or $z$, the change in coordinates is essentially the same as a rotation with 2D polar coordinates, treating the two axes that are not being rotated as $x$ and $y$ in 2D.  
   - Recall in polar coordinates $x = r\cos(\theta)$ and $y = r\sin(\theta)$
 
-The figures below represent a 45 degree rotation of the green vertex around the x-axis:  
+The figures below represent a 45 degree rotation of the green vertex around the $x$-axis:  
   
 <img src = "https://user-images.githubusercontent.com/26773050/192688704-69374cc3-1ae7-45a5-a623-ec885241ec7e.png" width = 80%>  
   
@@ -57,13 +57,13 @@ Finally, finding $(x', y')$:
     - $x' = r\cos(\alpha + \theta) + origin$
     - $y' = r\sin(\alpha + \theta) + origin$
 
-This point, $(x', y')$, represents the coordinates of the axes not being rotated. Because rotation is parallel to its axis, the coordinate for the axis of rotation does not change. Therefore, in the instance of the green vertex being rotated 45 degrees around the x-axis, it's new coordinates are $(x, x', y')$
+This point, $(x', y')$, represents the coordinates of the axes not being rotated. Because rotation is parallel to its axis, the coordinate for the axis of rotation does not change. Therefore, in the instance of the green vertex being rotated 45 degrees around the $x$-axis, it's new coordinates are $(x, x', y')$
   - Relative $x$ & $y$ in 2D depending on axis of rotation:
-    - X-Rotation: x-axis = y, y-axis = z
+    - $X$-Rotation: $x$-axis = $y$, $y$-axis = $z$
       - $(x', y', z') = (x, x', y')$
-    - Y-Rotation: x-axis = z, y-axis = x
+    - $Y$-Rotation: $x$-axis = $z$, $y$-axis = $x$
       - $(x', y', z') = (y', y, x')$
-    - Z-Rotation: x-axis = x, y-axis = y
+    - $Z$-Rotation: $x$-axis = $x$, $y$-axis = $y$
       - $(x', y', z') = (x', y', z)$
 
 # Cube Projection/Plotting
