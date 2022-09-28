@@ -66,6 +66,8 @@ This point, $(x', y')$, represents the coordinates of the axes not being rotated
     - Z-Rotation: x-axis = x, y-axis = y
       - $(x', y', z') = (x', y', z)$
 
+# Cube Projection/Plotting
+
 ## getVerticesCoordinates
 
 With the now solved 3D coordinates of the vertices of the cube, getVerticesCoordinates projects them onto a 2D plane and returns an int array of the 2D vertices' coordinates.
@@ -108,6 +110,14 @@ To prepare the coordinates for printing, coordsArray is quicksorted so that coor
 
 ## printToTerminal
 
-
+Lastly, printing the coordinates to the terminal. Because the array is already sorted, printing isn't too difficult. There are only a few rules:
+  - For (x,y):
+    - If the point is the first on its row, print $x-1$ spaces before it
+    - If the point is the last on its row, print a new line
+    - Otherwise, print $x-xPrev-1$ spaces before it
+      - Print amount of space between current point and previous point
+  - To keep the cube from bobbing up and down and sticking to the top of the terminal, print $(2 \* space + cubeLength)\*10 - maxY)$ new lines
+    - Adds space above the cube equal to the distance between the maximum y-value of the cube and the edge of the space taken up by the cube
+    - Just as printing $x-1$ spaces to the left of new rows prints x-values properly relative to their true coordinates, printing these new lines situates the y-values so the cube doesn't stray from its center
 
   
