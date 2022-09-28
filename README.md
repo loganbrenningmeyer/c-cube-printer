@@ -25,7 +25,7 @@ Returns an array of the 8 vertices of a cube nested in the first octant with the
 
 Given the 8 vertices found by buildCube, rotateCube rotates each vertex around the cube's center x-axis, y-axis, and z-axis by $xTheta$, $yTheta$, and $zTheta$ degrees, respectively.  
 
-When rotating from a single axis $(x, y, or z)$, the change in coordinates is essentially the same as a rotation with 2D polar coordinates, treating the two axes that are not being rotated as x and y in 2D.  
+When rotating from a single axis $x$, $y$, or $z$, the change in coordinates is essentially the same as a rotation with 2D polar coordinates, treating the two axes that are not being rotated as $x$ and $y$ in 2D.  
   - Recall in polar coordinates $x = r\cos(\theta)$ and $y = r\sin(\theta)$
 
 The figures below represent a 45 degree rotation of the green vertex around the x-axis:  
@@ -58,7 +58,7 @@ Finally, finding $(x', y')$:
     - $y' = r\sin(\alpha + \theta) + origin$
 
 This point, $(x', y')$, represents the coordinates of the axes not being rotated. Because rotation is parallel to its axis, the coordinate for the axis of rotation does not change. Therefore, in the instance of the green vertex being rotated 45 degrees around the x-axis, it's new coordinates are $(x, x', y')$
-  - Relative x & y in 2D depending on axis of rotation:
+  - Relative $x$ & $y$ in 2D depending on axis of rotation:
     - X-Rotation: x-axis = y, y-axis = z
       - $(x', y', z') = (x, x', y')$
     - Y-Rotation: x-axis = z, y-axis = x
@@ -72,7 +72,7 @@ This point, $(x', y')$, represents the coordinates of the axes not being rotated
 
 With the now obtained 3D coordinates of the vertices of the cube, getVerticesCoordinates projects them onto a 2D plane and returns an int array of the 2D vertices' coordinates.
 
-To project the vertices onto a plane, a "camera" is placed at a point whose y and z-values are centered with the cube and whose x-value is located $1.5\*length$ units past where the space surrounding the cube ends. 
+To project the vertices onto a plane, a "camera" is placed at a point whose $y$ and $z$-values are centered with the cube and whose $x$-value is located $1.5\*length$ units past where the space surrounding the cube ends. 
 
 Calculating intersections of the screen and the lines connecting vertices $(x, y, z)$ and the camera $(xC, yC, zC)$:
   - Line equation: $(xC, yC, zC) = (x, y, z) + t&lta, b, c&gt$
@@ -87,8 +87,8 @@ Calculating intersections of the screen and the lines connecting vertices $(x, y
      - $t = (xC - length\*1.5 - x)/a$
    - Now, the points are solvable:
      - $screen(xS, yS) = (y + tb, z + tc)$
-       - When looking at cube in negative x direction, y represents x-axis and z represents y-axis
-       - Multiply y-value by 31/35 to get rid of the warping effect from non-square pixels (██) 
+       - When looking at cube in negative $x$ direction, $y$ represents $x$-axis and $z$ represents $y$-axis
+       - Multiply $y$-value by 31/35 to get rid of the warping effect from non-square pixels (██) 
          - Pixels are about 35px tall and 31px wide, therefore need to multiply y-values by 31/35 to give things square proportions
    - Multiply all coordinate values by 10 then round to the nearest integer
       - Prepares coordinates for Bresenham's algorithm by converting to int and minimizes loss of data
@@ -109,7 +109,7 @@ Recall earlier when I said the ordering of the vertices would be important later
 
 Using Bresenham's algorithm, getLineCoordinates finds every coordinate of all 12 lines and adds it to coordsArray. This creates an unordered array of all of the cube's points. Vertices are included multiple times because they are connected to multiple lines. This is taken care of later, however, when printing to the terminal.
 
-To prepare the coordinates for printing, coordsArray is quicksorted so that coordinates are sorted descending by y-value. In addition, coordinates with matching y-values are sorted ascending by x-value. This way, when the array is read from beginning to end it gives coordinates from top to bottom, left to right.
+To prepare the coordinates for printing, coordsArray is quicksorted so that coordinates are sorted descending by y-value. In addition, coordinates with matching $y$-values are sorted ascending by $x$-value. This way, when the array is read from beginning to end it gives coordinates from top to bottom, left to right.
 
 ## printToTerminal
 
@@ -123,6 +123,6 @@ Lastly, printing the coordinates to the terminal. Because the array is already s
   - To keep the cube from bobbing up and down and sticking to the top of the terminal, print $(2 \* space + length)\*10 - maxY)$ new lines
     - Adds space above the cube equal to the distance between the maximum y-value of the cube and the edge of the space taken up by the cube
     - Needs \*10 to account for \*10 scaling when converting vertices from floats to ints by multiplying by 10 and rounding in getVerticesCoordinates
-    - Just as printing $x-1$ spaces to the left of new rows prints x-values properly relative to their true coordinates, printing these new lines situates the y-values so the cube doesn't stray from its center
+    - Just as printing $x-1$ spaces to the left of new rows prints $x$-values properly relative to their true coordinates, printing these new lines situates the $y$-values so the cube doesn't stray from its center
 
   
