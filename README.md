@@ -86,6 +86,7 @@ Calculating intersections of the lines between vertices (x, y, z) and the camera
     - Therefore:
      - $screen(xS, yS) = (y + tb, z + tc)$
        - When looking at cube in negative x direction, y represents x-axis and z represents y-axis
+       - Multiply y-value by 0.8 to get rid of the warping effect from non-square pixels (██) 
 
 2D projection of a cube with no rotation:
 
