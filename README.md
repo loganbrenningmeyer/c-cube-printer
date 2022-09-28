@@ -127,7 +127,7 @@ Lastly, printing the coordinates to the terminal. Because the array is already s
       - Print amount of space between current point and previous point
   - To keep the cube from bobbing up and down and sticking to the top of the terminal, print $(2 \* space + length)\*10 - maxY)$ new lines
     - Adds space above the cube equal to the distance between the maximum y-value of the cube and the edge of the space taken up by the cube
-    - Needs \*10 to account for \*10 scaling when converting vertices from floats to ints by multiplying by 10 and rounding in getVerticesCoordinates
+    - Needs $\*10$ to account for $\*10$ scaling when converting vertices from floats to ints by multiplying by 10 and rounding in getVerticesCoordinates
     - Just as printing $x-1$ spaces to the left of new rows prints $x$-values properly relative to their true coordinates, printing these new lines situates the $y$-values so the cube doesn't stray from its center
 
   
