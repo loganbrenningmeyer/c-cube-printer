@@ -5,7 +5,7 @@ Animates random cube rotation in the terminal or prints cube with user-specified
 
 # Cube Generation  
 
-To print a 3D cube onto a 2D terminal, a 3D cube must first be built, then rotated, then projected onto a 2D plane. To do this:
+To print a 3D cube onto a 2D terminal, a 3D cube must first be constructed, then rotated, then projected onto a 2D plane. To do this:
   1. Build the cube as 8 vertices in 3D space
   2. Apply rotations to the points
   3. Project the vertices onto a 2D plane
