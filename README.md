@@ -74,7 +74,7 @@ With the now obtained 3D coordinates of the vertices of the cube, getVerticesCoo
 
 To project the vertices onto a plane, a "camera" is placed at a point whose y and z-values are centered with the cube and whose x-value is located 1.5\*length units past where the space surrounding the cube ends. 
 
-Calculating intersections of the lines between vertices (x, y, z) and the camera (xC, yC, zC) and the screen:
+Calculating intersections of the screen and the lines connecting vertices (x, y, z) and the camera (xC, yC, zC):
   - Line equation: $(xC, yC, zC) = (x, y, z) + t&lta, b, c&gt$
     - $a = xC - x$
     - $b = yC - y$
