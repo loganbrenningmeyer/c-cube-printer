@@ -36,17 +36,17 @@ Represented in 2D polar coordinates:
 
 <img src = "https://user-images.githubusercontent.com/26773050/192688715-295ad6ca-2ff4-4ad4-a88f-a7ac845e9680.png" width = 80%>   
 
-Calculating adjacent and opposite:
+Calculating $adjacent$ and $opposite$:
   - $adjacent = x - origin$
   - $opposite = y - origin$
   - adjacent written in code as **alphaX** and opposite written as **alphaY**
 
-Calculating radius:
+Calculating $radius$:
   - Using the Pythagorean theorem:
     - $radius = \sqrt{adjacent^2 + opposite^2}$
   - $radius$ must be calculated for each vertex as different vertices may be different distances from the axis of rotation if a rotation for another axis has already been applied.
 
-Solving for $\alpha$, the vertex's original angle of rotation:  
+Calculating $\alpha$, the vertex's original angle of rotation:  
   - $\tan(\alpha) = opposite/adjacent$
   - $\alpha = \arctan(opposite/adjacent)$
     - If the point lies in Quadrant I relative to the origin, leave $\alpha$ as is
