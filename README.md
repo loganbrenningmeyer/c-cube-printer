@@ -5,7 +5,7 @@ NOTE: Only works in Linux so it can use the proper escape sequences and characte
 
 # Cube Generation
 
-To print a 3D cube onto a 2D terminal, a 3D cube mustfirst be built, manipulated, then projected onto a 2D plane. To do this:
+To print a 3D cube onto a 2D terminal, a 3D cube must first be built, then rotated, then projected onto a 2D plane. To do this:
   
 ## buildCube
     
@@ -14,6 +14,12 @@ Returns an array of the 8 vertices of a cube nested in the first octant with the
 
 ## rotateCube
 
-Given the 8 vertices found by buildCube, rotateCube rotates each point around the cube's center x-axis, y-axis, and z-axis by xTheta, yTheta, and zTheta degrees, respectively.
+Given the 8 vertices found by buildCube, rotateCube rotates each vertex around the cube's center x-axis, y-axis, and z-axis by xTheta, yTheta, and zTheta degrees, respectively.
+
+When rotating from a single axis (x, y, or z), the change in coordinates is essentially the same as a rotation with 2D polar coordinates, treating the two axes that are not being rotated as x and y in 2D.
+  - Recall in polar coordinates **x = rcos(θ)** and **y = rsin(θ)**
+
+![rotateCube3D](https://user-images.githubusercontent.com/26773050/192679102-193a403f-9daf-4363-acef-4c34911595a9.png)
+![rotateCube2D](https://user-images.githubusercontent.com/26773050/192679117-bd7363a4-c6ef-43be-a26f-09806fc2e58b.png)
 
 # Printing
