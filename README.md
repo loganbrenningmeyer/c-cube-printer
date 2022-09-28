@@ -74,6 +74,10 @@ With the now obtained 3D coordinates of the vertices of the cube, getVerticesCoo
 
 To project the vertices onto a plane, a "camera" is placed at a point whose $y$ and $z$-values are centered with the cube and whose $x$-value is located $1.5\*length$ units past where the space surrounding the cube ends. 
 
+2D projection of a cube with no rotation:
+
+<img src = "https://user-images.githubusercontent.com/26773050/192704553-cb0a48a8-2764-47ae-8c77-d0e21ade62b5.png" width = 60%><img src = "https://user-images.githubusercontent.com/26773050/192706152-092c3b61-4410-4302-addb-999f93499ad7.png" width = 40%>
+
 Calculating intersections of the screen and the lines connecting vertices $(x, y, z)$ and the camera $(xC, yC, zC)$:
   - Line equation: $(xC, yC, zC) = (x, y, z) + t&lta, b, c&gt$
     - $a = xC - x$
@@ -92,10 +96,6 @@ Calculating intersections of the screen and the lines connecting vertices $(x, y
          - Pixels are about 35px tall and 31px wide, therefore need to multiply y-values by 31/35 to give things square proportions
    - Multiply all coordinate values by 10 then round to the nearest integer
       - Prepares coordinates for Bresenham's algorithm by converting to int and minimizes loss of data
-
-2D projection of a cube with no rotation:
-
-<img src = "https://user-images.githubusercontent.com/26773050/192704553-cb0a48a8-2764-47ae-8c77-d0e21ade62b5.png" width = 60%><img src = "https://user-images.githubusercontent.com/26773050/192706152-092c3b61-4410-4302-addb-999f93499ad7.png" width = 40%>
 
 ## getLineCoordinates
 
