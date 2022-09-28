@@ -25,9 +25,9 @@ When rotating from a single axis (x, y, or z), the change in coordinates is esse
   - Recall in polar coordinates $x = r\cos(\theta)$ and $y = r\sin(\theta)$
 
 The figures below represent a 45 degree rotation of the green vertex around the x-axis:  
-<img src = "https://user-images.githubusercontent.com/26773050/192688704-69374cc3-1ae7-45a5-a623-ec885241ec7e.png" width = 80% display = block margin = auto>  
+<img src = "https://user-images.githubusercontent.com/26773050/192688704-69374cc3-1ae7-45a5-a623-ec885241ec7e.png" width = 80% display = block align = center>  
 Represented in 2D polar coordinates:  
-<img src = "https://user-images.githubusercontent.com/26773050/192688715-295ad6ca-2ff4-4ad4-a88f-a7ac845e9680.png" width = 80% display = block margin = auto>  
+<img src = "https://user-images.githubusercontent.com/26773050/192688715-295ad6ca-2ff4-4ad4-a88f-a7ac845e9680.png" width = 80% display = block align = center>  
 Represented in 2D polar coordinates:  
 
 Calculating adjacent and opposite:
