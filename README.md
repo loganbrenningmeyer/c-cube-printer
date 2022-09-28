@@ -23,9 +23,9 @@ Returns an array of the 8 vertices of a cube nested in the first octant with the
 
 ## rotateCube  
 
-Given the 8 vertices found by buildCube, rotateCube rotates each vertex around the cube's center x-axis, y-axis, and z-axis by xTheta, yTheta, and zTheta degrees, respectively.  
+Given the 8 vertices found by buildCube, rotateCube rotates each vertex around the cube's center x-axis, y-axis, and z-axis by $xTheta$, $yTheta$, and $zTheta$ degrees, respectively.  
 
-When rotating from a single axis (x, y, or z), the change in coordinates is essentially the same as a rotation with 2D polar coordinates, treating the two axes that are not being rotated as x and y in 2D.  
+When rotating from a single axis $(x, y, or z)$, the change in coordinates is essentially the same as a rotation with 2D polar coordinates, treating the two axes that are not being rotated as x and y in 2D.  
   - Recall in polar coordinates $x = r\cos(\theta)$ and $y = r\sin(\theta)$
 
 The figures below represent a 45 degree rotation of the green vertex around the x-axis:  
@@ -74,15 +74,15 @@ With the now obtained 3D coordinates of the vertices of the cube, getVerticesCoo
 
 To project the vertices onto a plane, a "camera" is placed at a point whose y and z-values are centered with the cube and whose x-value is located $1.5\*length$ units past where the space surrounding the cube ends. 
 
-Calculating intersections of the screen and the lines connecting vertices (x, y, z) and the camera (xC, yC, zC):
+Calculating intersections of the screen and the lines connecting vertices $(x, y, z)$ and the camera $(xC, yC, zC)$:
   - Line equation: $(xC, yC, zC) = (x, y, z) + t&lta, b, c&gt$
     - $a = xC - x$
     - $b = yC - y$
     - $c = zC - z$
-   - Screen$(xS, yS)$ is the plane located at the edge of the space surrounding the cube ($x = xC - length\*1.5$). Need to find constant $t$ for the intersection of the line and the screen.
+    - $screen(xS, yS)$ is the plane located at the edge of the space surrounding the cube ($x = xC - length\*1.5$). Need to find constant $t$ for the intersection of the line and the screen.
      - $xS = xC - length\*1.5$
      - $xS = x + ta$
-       - Screen x-coordinate must be somewhere along the line connecting the vertex and camera
+       - $screen$ x-coordinate must be somewhere along the line connecting the vertex and camera
      - $x + ta = xC - length\*1.5$
      - $t = (xC - length\*1.5 - x)/a$
    - Now, the points are solvable:
