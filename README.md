@@ -9,8 +9,8 @@ NOTE: Only works in Linux so it can use the proper escape sequences and characte
   
   ## buildCube()
     
-   Returns an array of the 8 vertices of a cube nested in the first octant. The cube has space equal to 1 more than the max distance the cube could reach while rotating:
-   ![buildCube](https://user-images.githubusercontent.com/26773050/192668984-456cfadf-21f8-42aa-87a1-6b76b0ec5ac2.png)
+  Returns an array of the 8 vertices of a cube nested in the first octant. The cube has space equal to 1 more than the max distance the cube could reach while rotating:
+  ![buildCube](https://user-images.githubusercontent.com/26773050/192668984-456cfadf-21f8-42aa-87a1-6b76b0ec5ac2.png)
 
 # Rotation
 
