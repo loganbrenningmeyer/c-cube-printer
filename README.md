@@ -15,7 +15,7 @@ To print a 3D cube onto a 2D terminal, a 3D cube must first be constructed, then
 ## buildCube  
     
 Returns an array of the 8 vertices of a cube nested in the first octant with the specified length. The cube has space on all sides equal to 1 more than the max distance the cube could reach while rotating. Each cube is numbered 0-7 in the order that it is stored in the array. This ordering will be important to remember later when drawing lines between the proper vertices after rotation.     
-![buildCube](https://user-images.githubusercontent.com/26773050/192688832-fb0e6fed-8487-41c5-9693-0683503cc562.png)
+<img src = "https://user-images.githubusercontent.com/26773050/192688832-fb0e6fed-8487-41c5-9693-0683503cc562.png" width = 80%>
 
 ## rotateCube  
 
@@ -25,9 +25,9 @@ When rotating from a single axis (x, y, or z), the change in coordinates is esse
   - Recall in polar coordinates $x = r\cos(\theta)$ and $y = r\sin(\theta)$
 
 The figures below represent a 45 degree rotation of the green vertex around the x-axis:  
-<img src = "https://user-images.githubusercontent.com/26773050/192688704-69374cc3-1ae7-45a5-a623-ec885241ec7e.png" width = 80% display = block align = center>  
+<img src = "https://user-images.githubusercontent.com/26773050/192688704-69374cc3-1ae7-45a5-a623-ec885241ec7e.png" width = 80%>  
 Represented in 2D polar coordinates:  
-<img src = "https://user-images.githubusercontent.com/26773050/192688715-295ad6ca-2ff4-4ad4-a88f-a7ac845e9680.png" width = 80% display = block align = center>  
+<img src = "https://user-images.githubusercontent.com/26773050/192688715-295ad6ca-2ff4-4ad4-a88f-a7ac845e9680.png" width = 80%>  
 Represented in 2D polar coordinates:  
 
 Calculating adjacent and opposite:
