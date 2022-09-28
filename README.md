@@ -49,7 +49,7 @@ Solving for $\alpha$, the vertex's original angle of rotation:
     - If the point is in Quadrant II or III, add $\pi$
     - If the point is in Quadrant IV, add $2\pi$
 
-Finally, finding (x', y'):
+Finally, finding $(x', y')$:
   - Add angle shift $\theta$ to $\alpha$ and correct by the origin
     - $x' = r\cos(\alpha + \theta) + origin$
     - $y' = r\sin(\alpha + \theta) + origin$
