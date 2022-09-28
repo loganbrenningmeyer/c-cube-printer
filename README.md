@@ -88,6 +88,10 @@ Calculating intersections of the lines between vertices (x, y, z) and the camera
 
 <img src = "https://user-images.githubusercontent.com/26773050/192704553-cb0a48a8-2764-47ae-8c77-d0e21ade62b5.png" width = 60%><img src = "https://user-images.githubusercontent.com/26773050/192706152-092c3b61-4410-4302-addb-999f93499ad7.png" width = 40%>
 
+## getLineCoordinates
+
+Now that we have the vertices, the next step is to connect them with lines. To do so, <a href = "https://www.geeksforgeeks.org/bresenhams-line-generation-algorithm/">Bresenham's Line Algorithm</a> can generate each coordinate between two points in a line using only int arithmetic. 
+
 
 
   
