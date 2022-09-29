@@ -116,7 +116,7 @@ To prepare the coordinates for printing, **coordsArray** is quicksorted so that 
 
 Sample **coordsArray**:
 
-`int coordsArray[1000][2] = {{5, 10}, {6, 10}, {7, 10}, {8, 10}, {9, 10}, {10, 10}, {5, 9}, {10, 9}, {5, 8}, {10, 8}, {5, 7}, {10,7}...}`
+`int coordsArray[1000][2] = {{5, 10}, {6, 10}, {7, 10}, {8, 10}, {9, 10}, {10, 10}, {5, 9}, {10, 9}, {5, 8}, {10, 8}...}`
 
 ## printToTerminal
 
