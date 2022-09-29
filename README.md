@@ -95,7 +95,7 @@ Calculating intersections of $screen$ and the lines connecting vertices $(x, y, 
     - $screen(xS, yS) = (y + tb, z + tc)$
       - When looking at the cube in the negative $x$ direction, $y$ represents $x$-axis and $z$ represents $y$-axis
       - Multiply $y$-value by 0.8 to get rid of the warping effect from non-square pixels (██) 
-        - Pixels are taller than they are wide. Through testing, 0.8 was found to be the most accurate **yScale** value to maintain a cube
+        - In the terminal, pixels are taller than they are wide. Through testing, 0.8 was found to be the most accurate **yScale** value to maintain a cube
   - Multiply all coordinate values by 10 then round to the nearest integer
      - Prepares coordinates for Bresenham's algorithm by converting to int and minimizes loss of data
 
