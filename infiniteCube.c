@@ -6,7 +6,8 @@ int main(void) {
 
     int size = 0, fps;
     float xTheta, yTheta, zTheta;
-    //Sets random starting point and random orientation increment values
+    //Sets random starting orientation in the range [-360,360]
+    //Sets random increment values in the range [0,1]
     xTheta = rand() % 721 - 360, yTheta = rand() % 721 - 360, zTheta = rand() % 721 - 360;
     float xInc = (float)rand()/(float)RAND_MAX, yInc = (float)rand()/(float)RAND_MAX, zInc = (float)rand()/(float)RAND_MAX;
 
@@ -18,6 +19,7 @@ int main(void) {
     printf("FPS: ");
     scanf("%d", &fps);
 
+    //Each frame, prints the cube then adjusts its orientation by xInc, yInc, and zInc
     while (1) {
         printCube(size, xTheta, yTheta, zTheta);
         xTheta += xInc, yTheta += yInc, zTheta += zInc;
