@@ -1,6 +1,6 @@
 # c-cube-printer
 
-*Go to PlatonicPrinter for printing other Platonic Solids*
+***Go to PlatonicPrinter for printing other Platonic Solids***
 
 Animates random cube rotation in the terminal or prints cube with user-specified size/orientation  
   - If compiled with infiniteCube.c: Animates infinitely rotating cube until the user terminates the program (CTRL+C)
