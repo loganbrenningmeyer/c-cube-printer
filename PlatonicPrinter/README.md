@@ -1,3 +1,4 @@
 
-
-![Spinning Icosahedron](https://media0.giphy.com/media/b51yW3VUzUAgSZ4aHa/giphy.gif)
+| Tetrahedron | Octahedron | Icosahedron | Dodecahedron |
+| ----------- | ---------- | ----------- | ------------ |
+|             |            |![Spinning Icosahedron](https://media0.giphy.com/media/b51yW3VUzUAgSZ4aHa/giphy.gif)|            |
