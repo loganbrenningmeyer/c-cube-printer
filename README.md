@@ -1,6 +1,7 @@
 # c-cube-printer  
 
-Animates random cube rotation in the terminal or prints cube with user-specified size/orientation
+Animates random cube rotation in the terminal or prints cube with user-specified size/orientation  
+  - If compiled with infiniteCube.c: Animates infinitely rotating cube until the user terminates the program (CTRL+C)
 
 ![Spinning Cube](https://media.giphy.com/media/fJ0fxIbhiA8cfdUcJS/giphy.gif)
 
@@ -92,9 +93,9 @@ Calculating intersections of $screen$ and the lines connecting vertices $(x, y, 
     - $t = (xC - length\*1.5 - x)/a$
   - Now, the points are solvable:
     - $screen(xS, yS) = (y + tb, z + tc)$
-      - When looking at cube in negative $x$ direction, $y$ represents $x$-axis and $z$ represents $y$-axis
+      - When looking at the cube in the negative $x$ direction, $y$ represents $x$-axis and $z$ represents $y$-axis
       - Multiply $y$-value by 0.8 to get rid of the warping effect from non-square pixels (██) 
-        - Pixels are taller than they are wide. Through testing, 0.8 was found to be the most accurate **yScale** value to maintain a cube
+        - In the terminal, pixels are taller than they are wide. Through testing, 0.8 was found to be the most accurate **yScale** value to maintain a cube
   - Multiply all coordinate values by 10 then round to the nearest integer
      - Prepares coordinates for Bresenham's algorithm by converting to int and minimizes loss of data
 
@@ -115,7 +116,7 @@ To prepare the coordinates for printing, **coordsArray** is quicksorted so that 
 
 Sample **coordsArray**:
 
-`int coordsArray[1000][2] = {{5, 10}, {6, 10}, {7, 10}, {8, 10}, {9, 10}, {10, 10}, {5, 9}, {10, 9}, {5, 8}, {10, 8}, {5, 7}, {10,7}...}`
+`int coordsArray[1000][2] = {{5, 10}, {6, 10}, {7, 10}, {8, 10}, {9, 10}, {10, 10}, {5, 9}, {10, 9}, {5, 8}, {10, 8}...}`
 
 ## printToTerminal
 
@@ -126,7 +127,7 @@ Lastly, printing the coordinates to the terminal. Because the array is already s
     - If the point is the last on its row, print a new line
     - Otherwise, print $x-xPrev-1$ spaces before it
       - Print amount of space between current point and previous point
-  - To keep the cube from bobbing up and down and sticking to the top of the terminal, print $(2 \* space + length)\*10 - maxY)$ new lines
+  - To keep the cube from bobbing up and down and sticking to the top of the terminal, print $(2 \* space + length)\*10 - maxY)$ new lines above the cube
     - Adds space above the cube equal to the distance between the maximum y-value of the cube and the edge of the space taken up by the cube
     - Needs $\*10$ to account for $\*10$ scaling when converting vertices from floats to ints by multiplying by 10 and rounding in getVerticesCoordinates
     - Just as printing $x-1$ spaces to the left of new rows prints $x$-values properly relative to their true coordinates, printing these new lines situates the $y$-values so the cube doesn't stray from its center
