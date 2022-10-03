@@ -4,16 +4,16 @@
 
 <table width = 100%>
   <tr>
-    <th width = 25%>Tetrahedron</th>
-    <th width = 25%>Octahedron</th>
-    <th width = 25%>Icosahedron</th>
-    <th width = 25%>Dodecahedron</th>
+    <th>Tetrahedron</th>
+    <th>Octahedron</th>
+    <th>Icosahedron</th>
+    <th>Dodecahedron</th>
   </tr>
   <tr>
-    <td><img width = 25% src=https://media1.giphy.com/media/zgwfSZ9FPRAESzk4O1/giphy.gif></td>
-    <td><img width = 25% src=https://media3.giphy.com/media/yf3RsqHOmlM6eVzYbV/giphy.gif></td>
-    <td><img width = 25% src=https://media0.giphy.com/media/b51yW3VUzUAgSZ4aHa/giphy.gif></td>
-    <td><img width = 25% src=https://media3.giphy.com/media/BiuElm4k1VLRvsAmEM/giphy.gif></td>
+    <td><img src=https://media1.giphy.com/media/zgwfSZ9FPRAESzk4O1/giphy.gif></td>
+    <td><img src=https://media3.giphy.com/media/yf3RsqHOmlM6eVzYbV/giphy.gif></td>
+    <td><img src=https://media0.giphy.com/media/b51yW3VUzUAgSZ4aHa/giphy.gif></td>
+    <td><img src=https://media3.giphy.com/media/BiuElm4k1VLRvsAmEM/giphy.gif></td>
   </tr>
 </table>
 
