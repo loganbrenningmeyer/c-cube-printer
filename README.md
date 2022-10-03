@@ -1,4 +1,4 @@
-# c-cube-printer
+# Spinning Cube
 
 ***Go to the PlatonicPrinter folder for printing other Platonic solids***
 
