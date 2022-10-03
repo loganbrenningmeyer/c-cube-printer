@@ -2,15 +2,12 @@
 
 ***Platonic solids*** are geometric solids whose faces are all equally-sized regular polygons which meet at equal angles at the vertices. There are only 5 Platonic solids: cube, tetrahedron, octahedron, icosahedron, and dodecahedron.
 
-<table width = 100%>
+<table>
   <tr width = 100%>
     <th>Tetrahedron</th>
     <th>Octahedron</th>
     <th>Icosahedron</th>
     <th>Dodecahedron</th>
-  </tr>
-
-</table>
 
 | Tetrahedron | Octahedron | Icosahedron | Dodecahedron |
 | ----------- | ---------- | ----------- | ------------ |
