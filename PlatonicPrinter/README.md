@@ -12,9 +12,13 @@ Using the code from the cube printer and with help from this paper (http://www.m
 
 By taking "every other" vertex of the cube (top diagonal/bottom diagonal), and connecting them you can create a tetrahedron.
 
+![Tetrahedron](https://user-images.githubusercontent.com/26773050/193640810-e6937999-9c88-4d18-b457-1bbfc6b7742e.png)
+
 ## Octahedron (8-sided)
 
 An octahedron can be formed by connecting the center of each of the cube's 6 faces.
+
+![Octahedron](https://user-images.githubusercontent.com/26773050/193640847-5055f8e0-71e9-44f3-9127-1fca237f53e7.png)
 
 ## Icosahedron (20-sided)
 
