@@ -6,4 +6,4 @@
 | ----------- | ---------- | ----------- | ------------ |
 |![Spinning Tetrahedron](https://media1.giphy.com/media/zgwfSZ9FPRAESzk4O1/giphy.gif)|![Spinning Octahedron](https://media3.giphy.com/media/yf3RsqHOmlM6eVzYbV/giphy.gif)|![Spinning Icosahedron](https://media0.giphy.com/media/b51yW3VUzUAgSZ4aHa/giphy.gif)|![Spinning Dodecahedron](https://media3.giphy.com/media/BiuElm4k1VLRvsAmEM/giphy.gif)|
 
-With help from this http://www.ms.uky.edu/~lee/visual05/notes/platonics.pdf
+Using the code from the cube printer and with help from this paper (http://www.ms.uky.edu/~lee/visual05/notes/platonics.pdf), the vertices of every platonic solid can be derived from a cube.
