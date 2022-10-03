@@ -37,7 +37,7 @@ Building an icosahedron from a cube is a bit trickier than the others. First, in
 
 | Golden Rectangles | Connecting Vertices |
 | ----------------- | ------------------- |
-|![IcosahedronRectangles](https://user-images.githubusercontent.com/26773050/193671371-86efaba0-56c1-4592-873f-3a02c14437f2.png)|![IcosahedronVertices](https://user-images.githubusercontent.com/26773050/193677960-531bed7a-89b0-414e-b33c-b0c4bad9016b.png)|
+|![IcosahedronRectangles](https://user-images.githubusercontent.com/26773050/193698542-8719f7c6-37a1-4cb7-bd2a-34b1d831c90c.png)|![IcosahedronVertices](https://user-images.githubusercontent.com/26773050/193677960-531bed7a-89b0-414e-b33c-b0c4bad9016b.png)|
 
 ## Dodecahedron (12-sided)
 
