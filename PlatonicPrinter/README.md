@@ -8,4 +8,4 @@
 
 Using the code from the cube printer and with help from this paper (http://www.ms.uky.edu/~lee/visual05/notes/platonics.pdf), the vertices of every platonic solid can be derived from a cube.
 
-##Tetrahedron
+## Tetrahedron
