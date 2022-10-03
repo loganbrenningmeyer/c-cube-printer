@@ -4,10 +4,10 @@
 
 <table width = 100%>
   <tr>
-    <th>Tetrahedron</th>
-    <th>Octahedron</th>
-    <th>Icosahedron</th>
-    <th>Dodecahedron</th>
+    <th width = 25%>Tetrahedron</th>
+    <th width = 25%>Octahedron</th>
+    <th width = 25%>Icosahedron</th>
+    <th width = 25%>Dodecahedron</th>
   </tr>
   <tr>
     <td><img src=https://media1.giphy.com/media/zgwfSZ9FPRAESzk4O1/giphy.gif></td>
@@ -54,14 +54,25 @@ Building an icosahedron from a cube is a bit trickier than the others. First, in
   </tr>
 </table>
 
-| Golden Rectangles | Connecting Vertices |
-| ----------------- | ------------------- |
-|![IcosahedronRectangles](https://user-images.githubusercontent.com/26773050/193698542-8719f7c6-37a1-4cb7-bd2a-34b1d831c90c.png)|![IcosahedronVertices](https://user-images.githubusercontent.com/26773050/193677960-531bed7a-89b0-414e-b33c-b0c4bad9016b.png)|
-
 ## Dodecahedron (12-sided)
 
 Once you have an icosahedron, building a dodecahedron is relatively simple. Find the center of each of the 20 triangles that form the icosahedron by averaging their coordinates. Connect these centers to form a dodecahedron.
 
-| Find Centers of Icosahedron | Connecting Vertices |
-| --------------------------- | ------------------- |
-|![DodecahedronCenters](https://user-images.githubusercontent.com/26773050/193698104-0fdfafbf-1d79-439b-b4e1-8e40045f9b6c.png)|![DodecahedronVertices](https://user-images.githubusercontent.com/26773050/193698124-8ac40974-8941-4881-a856-771f2de56211.png)|
+<table>
+  <tr>
+    <th width = 50%>
+      Find Centers of Icosahedron
+    </th>
+    <th width = 50%>
+      Connecting Vertices
+    </th>
+  </tr>
+  <tr>
+    <td>
+      <img src = https://user-images.githubusercontent.com/26773050/193698104-0fdfafbf-1d79-439b-b4e1-8e40045f9b6c.png>
+    </td>
+    <td>
+      <img src = https://user-images.githubusercontent.com/26773050/193698124-8ac40974-8941-4881-a856-771f2de56211.png>
+    </td>
+  </tr>
+</table>
