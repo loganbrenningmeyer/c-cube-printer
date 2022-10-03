@@ -35,6 +35,25 @@ An octahedron can be formed by connecting the center of each of the cube's 6 fac
 
 Building an icosahedron from a cube is a bit trickier than the others. First, intersect 3 "golden rectangles"—rectangles whose ratio of $length/width = \phi$ (the golden ratio)—centered along the $x$, $y$, and $z$-axes. The length of the rectangles is equal to the length of the cube, and the width can be found by $length/\phi$. Take the vertices of these 3 rectangles to find the vertices of the icosahedron. (Reference: https://www.georgehart.com/virtual-polyhedra/ex-pr1.html)
 
+<table>
+  <tr>
+    <th width = 50%>
+      Golden Rectangles
+    </th>
+    <th width = 50%>
+      Connecting Vertices
+    </th>
+  </tr>
+  <tr>
+    <td>
+      ![IcosahedronRectangles](https://user-images.githubusercontent.com/26773050/193698542-8719f7c6-37a1-4cb7-bd2a-34b1d831c90c.png)
+    </td>
+    <td>
+      ![IcosahedronVertices](https://user-images.githubusercontent.com/26773050/193677960-531bed7a-89b0-414e-b33c-b0c4bad9016b.png)
+    </td>
+  </tr>
+</table>
+
 | Golden Rectangles | Connecting Vertices |
 | ----------------- | ------------------- |
 |![IcosahedronRectangles](https://user-images.githubusercontent.com/26773050/193698542-8719f7c6-37a1-4cb7-bd2a-34b1d831c90c.png)|![IcosahedronVertices](https://user-images.githubusercontent.com/26773050/193677960-531bed7a-89b0-414e-b33c-b0c4bad9016b.png)|
