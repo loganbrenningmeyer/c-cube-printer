@@ -11,9 +11,9 @@
   </tr>
   <tr>
     <td><img src=https://media1.giphy.com/media/zgwfSZ9FPRAESzk4O1/giphy.gif></td>
-    <td>![Spinning Octahedron](https://media3.giphy.com/media/yf3RsqHOmlM6eVzYbV/giphy.gif)</td>
-    <td>![Spinning Icosahedron](https://media0.giphy.com/media/b51yW3VUzUAgSZ4aHa/giphy.gif)</td>
-    <td>![Spinning Dodecahedron](https://media3.giphy.com/media/BiuElm4k1VLRvsAmEM/giphy.gif)</td>
+    <td><img src=https://media3.giphy.com/media/yf3RsqHOmlM6eVzYbV/giphy.gif></td>
+    <td><img src=https://media0.giphy.com/media/b51yW3VUzUAgSZ4aHa/giphy.gif></td>
+    <td><img src=https://media3.giphy.com/media/BiuElm4k1VLRvsAmEM/giphy.gif></td>
   </tr>
 </table>
 
