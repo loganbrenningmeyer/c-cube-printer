@@ -4,10 +4,10 @@
 
 <table width = 100%>
   <tr>
-    <th>Tetrahedron</th>
-    <th>Octahedron</th>
-    <th>Icosahedron</th>
-    <th>Dodecahedron</th>
+    <th width = 25%>Tetrahedron</th>
+    <th width = 25%>Octahedron</th>
+    <th width = 25%>Icosahedron</th>
+    <th width = 25%>Dodecahedron</th>
   </tr>
   <tr>
     <td><img src=https://media1.giphy.com/media/zgwfSZ9FPRAESzk4O1/giphy.gif></td>
