@@ -29,7 +29,7 @@ By taking "every other" vertex of the cube (top diagonal/bottom diagonal), and c
 
 An octahedron can be formed by connecting the center of each of the cube's 6 faces.
 
-<img src = https://user-images.githubusercontent.com/26773050/193676194-990ae13c-9c19-45d9-9645-2bd84a90d2d1.png width = 80%>
+<img src = https://user-images.githubusercontent.com/26773050/193700009-e89c6307-4cf9-4106-adeb-699f6994c40a.png width = 80%>
 
 ## Icosahedron (20-sided)
 
