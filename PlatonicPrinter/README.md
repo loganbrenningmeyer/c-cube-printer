@@ -15,6 +15,7 @@
     <td><img src=https://media0.giphy.com/media/b51yW3VUzUAgSZ4aHa/giphy.gif></td>
     <td><img src=https://media3.giphy.com/media/BiuElm4k1VLRvsAmEM/giphy.gif></td>
   </tr>
+</table>
 
 Using the code from the cube printer and with help from this paper (http://www.ms.uky.edu/~lee/visual05/notes/platonics.pdf), the vertices of every platonic solid can be derived from a cube. 
 
