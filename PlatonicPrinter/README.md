@@ -56,7 +56,7 @@ Building an icosahedron from a cube is a bit trickier than the others. First, in
 
 ## Dodecahedron (12-sided)
 
-Once you have an icosahedron, building a dodecahedron is relatively simple. Find the center of each of the 20 triangles that form the icosahedron by averaging their coordinates. Connect these centers to form a dodecahedron.
+Once you have an icosahedron, building a dodecahedron is relatively simple. Find the center of each of the 20 triangles that form the icosahedron by averaging the triangle's vertices' coordinates. Connect these centers to form a dodecahedron.
 
 <table>
   <tr>
