@@ -26,7 +26,7 @@ Building an icosahedron from a cube is a bit trickier than the others. First, in
 
 | Golden Rectangles | Connecting Vertices |
 | ----------------- | ------------------- |
-|(![IcosahedronRectangles](https://user-images.githubusercontent.com/26773050/193671371-86efaba0-56c1-4592-873f-3a02c14437f2.png)|![IcosahedronVertices](https://user-images.githubusercontent.com/26773050/193671507-8d758bd2-5154-4b63-9013-680800565380.png)|
+|![IcosahedronRectangles](https://user-images.githubusercontent.com/26773050/193671371-86efaba0-56c1-4592-873f-3a02c14437f2.png)|![IcosahedronVertices](https://user-images.githubusercontent.com/26773050/193671507-8d758bd2-5154-4b63-9013-680800565380.png)|
 
 https://www.georgehart.com/virtual-polyhedra/ex-pr1.html
 
