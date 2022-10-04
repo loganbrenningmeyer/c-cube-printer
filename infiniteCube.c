@@ -6,20 +6,18 @@ int main(void) {
 
     int size = 0, fps;
     float xTheta, yTheta, zTheta;
-    //Sets random starting orientation in the range [-360,360]
-    //Sets random increment values in the range [0,1]
+    //Sets random starting point and random orientation increment values
     xTheta = rand() % 721 - 360, yTheta = rand() % 721 - 360, zTheta = rand() % 721 - 360;
     float xInc = (float)rand()/(float)RAND_MAX, yInc = (float)rand()/(float)RAND_MAX, zInc = (float)rand()/(float)RAND_MAX;
 
     printf("INFINITE CUBE\n");
     while (size < 1 || size > 10) {
         printf("Size (1-10): ");
-        scanf("%d", &size);
+        if (scanf("%d", &size) == 0) return 1;
     }
     printf("FPS: ");
-    scanf("%d", &fps);
+    if (scanf("%d", &fps) == 0) return 1;
 
-    //Each frame, prints the cube then adjusts its orientation by xInc, yInc, and zInc
     while (1) {
         printCube(size, xTheta, yTheta, zTheta);
         xTheta += xInc, yTheta += yInc, zTheta += zInc;

@@ -15,29 +15,34 @@ int main(void) {
 
         while (userChoice != 1 && userChoice != 2) {
             printf("\nAnimate (1) or Print Cube (2): ");
-            scanf("%d", &userChoice);
+            if (scanf("%d", &userChoice) == 0) {
+                return 1;
+            } else if (userChoice == EOF) {
+                return 0;
+            }
         }
 
         //Animate cube
         if (userChoice == 1) {
-            int fps, seconds, length;
+
+            int fps = 0, seconds = 0, length = 0;
 
             //Take animation duration as input
             printf("\nDuration (s): ");
-            scanf("%d", &seconds);
+            if (scanf("%d", &seconds) == 0) return 1;
 
             //Take fps as input
             printf("FPS: ");
-            scanf("%d", &fps);
+            if (scanf("%d", &fps) == 0) return 1;
 
             //Take length as input
-            while (length > 10 || length < 1) {
+            while (length < 1 || length > 10) {
                 printf("Cube Length (1-10): ");
-                scanf("%d", &length);
+                if (scanf("%d", &length) == 0) return 1;
             }
 
             animateCube(length, seconds, fps);
-            
+
         //Print cube
         } else {
             printf("\n");
@@ -45,19 +50,20 @@ int main(void) {
             int length = 0, xTheta, yTheta, zTheta;
             while (length < 1 || length > 10) {
                 printf("Cube Length (1-10): ");
-                scanf("%d", &length);
+                if (scanf("%d", &length) == 0) return 1;
             }
+
             printf("X-Orientation (degrees): ");
-            scanf("%d", &xTheta);
+            if (scanf("%d", &xTheta) == 0) return 1;
             printf("Y-Orientation (degrees): ");
-            scanf("%d", &yTheta);
+            if (scanf("%d", &yTheta) == 0) return 1;
             printf("Z-Orientation (degrees): ");
-            scanf("%d", &zTheta);
+            if (scanf("%d", &zTheta) == 0) return 1;
 
             printCube(length, xTheta, yTheta, zTheta);
         }
 
         printf("\nPrint another cube? (y/n): ");
-        scanf("%s", &printAgain);
+        if (scanf("%s", &printAgain) == 0 || printAgain == EOF) return 0;
     }
 }
