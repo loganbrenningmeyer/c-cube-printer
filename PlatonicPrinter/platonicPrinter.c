@@ -457,19 +457,11 @@ float ** rotateSolid(float **cube, int length, int numVertices, float xTheta, fl
         if (yTheta != 0 && (z0 - origin != 0 || x0 - origin != 0)) {
             //For y-rotation, x = z, y = x
             x = z0, y = x0;
-
-            //Calculate radius
-            //Radius is the distance from the point to the line running through (x, origin, origin)
+            
             radius = sqrt(pow(x - origin, 2) + pow(y - origin, 2));
 
-            //Calculate alpha (current radians counterclockwise from x-axis in 2D).
-            //Find adjacent and opposite sides to alpha, then use atan() to find angle
             float alphaX = x - origin, alphaY = y - origin;
             alpha = atan(alphaY/alphaX);
-
-            //If alpha in QI leave it
-            //QII, QIII: Add PI
-            //QIV: Add 2*PI
 
             //QII and QIII
             if ((alphaX < 0 && alphaY >= 0) || (alphaX < 0 && alphaY < 0)) {
@@ -491,19 +483,11 @@ float ** rotateSolid(float **cube, int length, int numVertices, float xTheta, fl
         if (zTheta != 0 && (x0 - origin != 0 || y0 - origin != 0)) {
             //For z-rotation, x = x, y = y
             x = x0, y = y0;
-
-            //Calculate radius
-            //Radius is the distance from the point to the line running through (x, origin, origin)
+            
             radius = sqrt(pow(x - origin, 2) + pow(y - origin, 2));
 
-            //Calculate alpha (current radians counterclockwise from x-axis in 2D).
-            //Find adjacent and opposite sides to alpha, then use atan() to find angle
             float alphaX = x - origin, alphaY = y - origin;
             alpha = atan(alphaY/alphaX);
-
-            //If alpha in QI leave it
-            //QII, QIII: Add PI
-            //QIV: Add 2*PI
 
             //QII and QIII
             if ((alphaX < 0 && alphaY >= 0) || (alphaX < 0 && alphaY < 0)) {
